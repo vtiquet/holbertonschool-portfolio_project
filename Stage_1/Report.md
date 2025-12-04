@@ -6,18 +6,18 @@ This document formalizes the initial stage of development for **CardioBot**, a h
 
 ## Team, Governance & Work Standards 👥
 
-### Team Composition and Roles (Task 0)
+### Team Composition and Roles
 
 | Member | Primary Project Role | Primary Technical Focus | Key Rationale & Competence |
 | :--- | :--- | :--- | :--- |
 | **Patrick** | **Project Manager (PM)** | CyberSecurity Student | **Final Decision Maker** on scope and technical feasibility. Focuses on **ISO 27005** compliance, risk analysis, and overall security posture. |
 | **Benjamin** | PM Support | CyberSecurity Student | Focuses on **HDS Certification** compliance, secure deployment (DevOps), infrastructure hardening, and system architecture design. |
 | **Fjolla** | Team Member | Machine Learning (ML) Student | Responsible for developing, training, and integrating the specialized **CardioBot** model for the AI agent. |
-| **Valentin (You)** | Team Member | **Full Stack Developer** (Frontend Lead) | Responsible for API implementation, system integration, and ensuring a fast, simple, and intuitive **"1-click" UI** (JS, CSS, HTML). |
+| **Valentin** | Team Member | Full Stack Student | Responsible for API implementation, system integration, and ensuring a fast, simple, and intuitive **"1-click" UI** (JS, CSS, HTML). |
 
 ---
 
-### Collaboration, Decision, and Work Standards (Improved)
+### Collaboration, Decision, and Work Standards
 
 | Standard Category | Norm / Tool | Actionable Work Standard |
 | :--- | :--- | :--- |
@@ -60,7 +60,7 @@ The MVP focuses on integrating core practice management functionality with the s
 | :--- | :--- | :--- |
 | **User Roles** | Implementation of three distinct roles: **Patient, Practitioner, and Sub-Admin (Receptionist).** | Complex, granular, data-level permissioning (e.g., viewing rights based on specific data sets). |
 | **Appointment/Notification** | Basic **Patient appointment booking** from the index page with minimal clicks. Internal notifications for Receptionist/Practitioner. | Real-time calendar synchronization with external tools (Google Calendar, external EMRs). |
-| **ML Chatbot (CardioBot)** | **Symptom Triage:** The model must analyze patient input and escalate high-risk cases to emergency services (SAMU/15) when necessary. | Providing small medical diagnostics, managing appointment cancellations/rescheduling. |
+| **ML AI Agent** | **Symptom Triage:** The model must analyze patient input and escalate high-risk cases to emergency services (SAMU/15) when necessary. | Providing small medical diagnostics, managing appointment cancellations/rescheduling. |
 | **Equipment Loan Module** | A web interface for Admins/Practitioners to **manually change** loan status. **Minimum Statuses:** *Available, Loaned, In Transit, Data Recovering, Cleaning.* | Automated inventory alerts, integrated GPS tracking or a scan system, maintenance scheduling based on usage. |
 | **Billing Process** | A module that allows the Practitioner/Sub-Admin to **generate, print, and/or prepare PDF invoice documents** for consultation fees, replacing the legacy system. | Full integration with external accounting software or automated payment processing/claim submission. |
 
