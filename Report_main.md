@@ -133,10 +133,10 @@ The project is structured into five sequential stages with specific milestones, 
 ### Quantified Success Metrics
 
 | Metric | Proposed Target | Justification |
-| --- | --- | --- |
-| **Core Page Load Time (LCP)** | ** seconds** | A fast user experience is non-negotiable for the "1-click" goal. |
-| **Chatbot Triage Accuracy** | **** | Essential for identifying and triaging high-risk symptoms safely. |
-| **Appointment Booking Rate (GCR)** | **** | Proves UI efficiency in replacing fragmented legacy systems. |
+| :--- | :--- | :--- |
+| **Core Page Load Time (LCP)** | **$\le 2.0$ seconds** | A fast user experience is non-negotiable for the "1-click" goal. This meets the performance standards of top-tier web applications. |
+| **Chatbot Triage Accuracy** | **$\ge 90\%$** | Essential for a medical application. A minimum of 90% accuracy in correctly identifying and triaging high-risk symptoms ensures patient safety and trust. |
+| **Appointment Booking Completion Rate (GCR)** | **$\ge 85\%$** | Measures the effectiveness of the simple UI. If 85% of patients who start booking successfully complete it, the UCPM has successfully replaced the previous fragmented systems. |
 
 ---
 
