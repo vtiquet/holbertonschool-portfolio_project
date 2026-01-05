@@ -1,6 +1,6 @@
 <div align="center"><img src="https://github.com/vtiquet/holbertonschool-resources/blob/main/image/Holberton-Logo.svg" width=40% height=40%/></div>
 
-# Titre du Projet (à remplacer)
+# Portfolio Project - Technical Documentation (Stage 3)
 
 ## Table of Contents :
 
