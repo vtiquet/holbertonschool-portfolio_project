@@ -1,147 +1,193 @@
 <div align="center"><img src="https://github.com/vtiquet/holbertonschool-resources/blob/main/image/Holberton-Logo.svg" width=40% height=40%/></div>
 
-# Titre du Projet (à remplacer)
+# Portfolio Project - MVP Development & Execution & Technical Manual Review (Stage 4 - France)
 
 ## Table of Contents :
 
-  - [0. Document Results and Lessons Learned](#subparagraph0)
-  - [1. Prepare the Project Presentation](#subparagraph1)
-  - [2. Conduct a Team Retrospective](#subparagraph2)
-  - [3. Deliver the Presentation](#subparagraph3)
-  - [4. Deliverables](#subparagraph4)
+  - [0. Plan and Define Sprints](#subparagraph0)
+  - [1. Execute Development Tasks](#subparagraph1)
+  - [2. Monitor Progress and Adjust](#subparagraph2)
+  - [3. Conduct Sprint Reviews and Retrospectives](#subparagraph3)
+  - [4. Final Integration and QA Testing](#subparagraph4)
+  - [5. Deliverables](#subparagraph5)
+  - [6. Technical Manual Review](#subparagraph6)
 
 ## Task
-### 0. Document Results and Lessons Learned <a name='subparagraph0'></a>
+### 0. Plan and Define Sprints <a name='subparagraph0'></a>
 
-Purpose: To provide a comprehensive summary of the project, including outcomes, challenges faced, and key takeaways.
+Purpose: To divide the development phase into short, manageable iterations.
 
 Instructions:
 
-    Write a results summary:
-        Highlight the MVP’s core functionalities.
-        Compare the outcomes to the initial objectives defined in the Project Charter.
-        Include key metrics or performance indicators, if applicable. 
-    Write a lessons learned section:
-        Reflect on what went well and why.
-        Identify challenges and how they were addressed.
-        Discuss how the team can improve for future projects. 
+    Break down user stories into smaller tasks or features.
+    Prioritize tasks for the first sprint using MoSCoW (Must Have, Should Have, Could Have, Won’t Have) or similar frameworks.
+    Identify dependencies between tasks and assign them to team members.
+    Define the duration of each sprint (e.g., 1-2 weeks).
+
+Deliverable Section:
+
+    Sprint plan with prioritized tasks, deadlines, and responsibilities for all team members.
+
+Resources:
+
+    Guide to Sprint Planning
+    MoSCoW Prioritization
+
+
+---
+
+### 1. Execute Development Tasks <a name='subparagraph1'></a>
+
+Purpose: To implement features and deliverables according to the sprint plan.
+
+Instructions:
+
+    Developers focus on tasks assigned for the sprint, adhering to coding standards and documentation requirements.
+    SCM ensures version control processes are followed, including branching strategies (e.g., feature branches) and pull request reviews.
+    QA conducts tests on completed tasks to identify bugs or improvements.
 
 Example:
-Results Summary:
-
-    MVP achieved 90% of planned features.
-    End-users found the UI intuitive based on feedback during testing.
-
-Lessons Learned:
-
-    Clearer task assignments reduced delays.
-    Future projects should allocate more time for testing and bug fixes.
-
-Deliverable Section: A concise document summarizing results and lessons learned.
+For a sprint focused on API development:
+- Developers implement endpoints.
+- SCM reviews code before merging into the development branch.
+- QA tests endpoints using Postman or similar tools.
 
 Resources:
 
-    How to Write a Project Closure Report
-    Lessons Learned Template
+    Best Practices for Git Branching
+    Testing Basics
 
 
 ---
 
-### 1. Prepare the Project Presentation <a name='subparagraph1'></a>
+### 2. Monitor Progress and Adjust <a name='subparagraph2'></a>
 
-Purpose: To professionally present the MVP and the entire project journey.
+
+2. Monitor Progress and Adjust
+
+Purpose: To track team performance, measure progress, and address any issues.
 
 Instructions:
 
-    Structure the presentation:
-        Introduction: Brief overview of the project and team.
-        Process Summary: Highlight each stage, including key activities, decisions, and challenges.
-        Technical Details: Summarize major technical decisions, diagrams, and implementation highlights.
-        Demo: Show the MVP in action, focusing on its core functionalities.
-        Reflection: Share results, metrics, and lessons learned.
-        Conclusion: Wrap up with future recommendations or next steps. 
-    Use presentation tools like PowerPoint, Google Slides, or Canva.
+    Conduct daily stand-ups to review completed tasks, discuss blockers, and plan the day’s work.
+    Use project management tools (e.g., Trello, Jira) to update task statuses and track metrics such as velocity (tasks completed per sprint).
+    Adjust sprint goals or reassign tasks as necessary to stay on track.
+
+Example Metrics:
+
+    Sprint velocity.
+    Percentage of tasks completed vs. planned.
+    Bug count and resolution rate.
+
+Resources:
+
+    Team velocity in Scrum: what is it and how to track it
+    How to Conduct a Stand-Up Meeting
+
+
+---
+
+### 3. Conduct Sprint Reviews and Retrospectives <a name='subparagraph3'></a>
+
+
+3. Conduct Sprint Reviews and Retrospectives
+
+Purpose: To review progress, demo completed features, and reflect on process improvements.
+
+Instructions:
+
+    At the end of each sprint, present completed features to the team and stakeholders.
+    Conduct a retrospective to identify what went well, what didn’t, and how to improve.
+
+Example Questions for Retrospectives:
+
+    What worked well during the sprint?
+    What challenges did we face?
+    What changes can we make to improve the next sprint?
+
+Resources:
+
+    How to conduct a successful sprint retrospective
+
+
+---
+
+### 4. Final Integration and QA Testing <a name='subparagraph4'></a>
+
+Purpose: To ensure all components work together seamlessly and meet quality standards.
+
+Instructions:
+
+    Conduct integration tests to verify the end-to-end functionality of the MVP.
+    QA executes the final test plan, including manual and automated tests.
+    Fix any critical bugs or performance issues identified.
 
 Example:
 
-    Slide 1: Project Title and Team Introduction.
-    Slide 2: Overview of the Project Charter and MVP concept.
-    Slide 3: Highlights of the technical architecture and development process.
-    Slide 4: MVP demo with screenshots or a live demonstration.
-    Slide 5: Results, metrics, and lessons learned.
-    Slide 6: Closing remarks and acknowledgments.
-
-Deliverable Section: A well-structured and visually appealing slide deck.
+    For a web app: Verify the front-end correctly integrates with the back-end APIs.
+    Ensure all database operations perform as expected under various conditions.
 
 Resources:
 
-    What Makes a Good Presentation?
-    Presentation Tips for Teams
+    End-to-End Testing Guide
+    Chrome Dev Tools Overview for Web Testing
+    Postman Beginner's Course - API Testing
 
 
 ---
 
-### 2. Conduct a Team Retrospective <a name='subparagraph2'></a>
+### 5. Deliverables <a name='subparagraph5'></a>
 
-Purpose: To evaluate the team’s performance and gather constructive feedback.
 
-Instructions:
+5. Deliverables
 
-    Schedule a team meeting to discuss the project experience.
-    Use guiding questions:
-        What worked well as a team?
-        What challenges did we face, and how were they resolved?
-        How can we improve collaboration in the future? 
-    Document feedback and improvement suggestions for future projects.
+Provide links to all that applies:
 
-Deliverable Section: Include key points from the retrospective in the lessons learned document.
-
-Resources:
-
-    How to Run a Project Retrospective
+    Sprint Reviews
+    Retrospectives
+    Sprint planning
+    Source repository
+    Bug tracking
+    Testing evidence and results
+    Production environment
 
 
 ---
 
-### 3. Deliver the Presentation <a name='subparagraph3'></a>
-
-Purpose: To showcase the MVP and the project process to stakeholders and tutors.
-
-Instructions:
-
-    Practice the presentation as a team to ensure smooth delivery.
-    Assign presentation sections to team members to highlight individual contributions.
-    Anticipate and prepare for potential questions from the audience.
-
-Tips for Delivery:
-
-    Be concise and focus on the most impactful aspects of the project.
-    Engage the audience with clear visuals and a polished MVP demo.
-    Ensure transitions between team members are seamless.
-
-Deliverable Section: The live presentation and demo of the MVP.
-
-Resources:
-
-    Public Speaking Tips
-    Team Presentations: How to Present Better as a Group
+### 6. Technical Manual Review <a name='subparagraph6'></a>
 
 
----
+6. Technical Manual Review
+This task consists of passing a technical manual review that will be planned by your SWE to evaluation the following points :
 
-### 4. Deliverables <a name='subparagraph4'></a>
+    The completion of the project (a functional MVP with minor or no bugs)
+    A demonstration of the MVP
+    The quality of your code, commits and documentation (README and code comments)
+    Your ability to explain with technical and logical reasoning the technical decisions that you took (database design, application architecture, technologies choices, diagrams and so on…)
+    Your ability to explain in details your the code and features of your portfolio
+    How does your application works ?
+    How did you test your application ? (show / explain how tests were conducted and what did you test)
+    How did you collaborate with your team members (if it's a group project)
+    Git & Github best practices (branches, testing…)
+    Your ability to explain technical notions and concepts that you applied in your application (examples : relations in your DB, frontend design, authentication, hashing, security, RBAC, other things related to your MVP features).
+    Your ability to explain frontend, backend, Database and other technical concepts integrated in your portfolio MVP.
 
 
+This MR is a crucial step to validate your portfolio project and the MR date and time will be planned and communicated by your SWE. If you have questions don't hesitate to reach out to your SWE.
+This MR is similar is an oral evaluation. However your code, application and your repository should be ready.
 
-Final Report:
 
-    Results summary.
-    Lessons learned.
-    Team retrospective highlights.
+What should you prepare for the MR ?
 
-Presentation Slide Deck:
-
-    Includes all key project stages and MVP demo.
+    You need to have a functional application
+    You need to have the diagram of your application to present
+    You must have the Database Diagram to present as well
+    You must have a clean and professional README file that describes the projet
+    You must have a Github repository to show to your SWE
+    Please add the link to your Github repository with a README that contains :
+        the application architecture
+        The Database Diagram
+    The Github repository must contain The complete application code and the code must be well-structured, documented and professional.
 
 
 ---
