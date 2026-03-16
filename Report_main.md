@@ -12,7 +12,7 @@ The project's unique selling proposition lies in its focus on high-level securit
 | **Unique Selling Point** | High-level security focus combined with a specialized, embedded **ML AI agent**. |
 | **Primary Risk** | Managing sensitive patient data (PHR) under HDS compliance. |
 | **Path to Success** | Achieving a **≤2.0s** page load time and **≥90%** chatbot accuracy within the MVP scope. |
-| **Current Status** | ✅ Stage 4 Complete - LOAN Module Production Ready |
+| **Current Status** | Stage 5 Closure - QA and final review package in progress |
 
 ---
 
@@ -25,7 +25,7 @@ The project's unique selling proposition lies in its focus on high-level securit
 | **Patrick** | **Project Manager (PM)** | CyberSecurity Student | **Final Decision Maker** on scope and technical feasibility. Focuses on **ISO 27001/27005** compliance and overall security posture. |
 | **Benjamin** | **SCM & PM Support** | CyberSecurity Student | Focuses on **HDS Certification** compliance, secure deployment, infrastructure hardening, and code review enforcement. |
 | **Fjolla** | **ML Engineer** | Machine Learning Student | Responsible for developing, training, and integrating the specialized **CardioBot** AI agent model for symptom triage. |
-| **Valentin** | **Full Stack Developer** | Full Stack Student | Responsible for API implementation, DDD architecture, system integration, and the **"1-click" UI** (HTMX, Stimulus, Vanilla JS). |
+| **Valentin** | **Full Stack Developer** | Full Stack Student | Responsible for API implementation, DDD architecture, system integration, and the **"1-click" UI** (HTML5, Stimulus, Vanilla JS). |
 
 ---
 
@@ -56,7 +56,7 @@ The choice of technologies prioritizes security, stability, and scalability for 
 | Component | Technology / Framework | Rationale |
 | --- | --- | --- |
 | **Backend / API** | **Python (Django 4.2)** | Robust, built-in security features (ORM, Auth, CSRF) essential for **ISO 27005** and **HDS** compliance. |
-| **Frontend** | **HTMX, Stimulus, Vanilla JS** | Reactive "SPA-like" experience without heavy framework overhead (LCP <2.0s target). |
+| **Frontend** | **HTML5, Stimulus, Vanilla JS** | Reactive "SPA-like" experience without heavy framework overhead (LCP <2.0s target). |
 | **Database** | **PostgreSQL** | Enterprise-grade relational integrity for clinical and inventory data. |
 | **Machine Learning** | **Python (TensorFlow/CamemBERT)** | NLP models for symptom triage and emergency escalation. |
 | **Security** | **Trivy, GitHub Actions** | Automated CI/CD security scanning to block CRITICAL vulnerabilities. |
@@ -75,8 +75,23 @@ The project is structured into five sequential stages, leading to the **Demo Day
 | **Stage 2** | ✅ Complete | Dec 8 - 12, 2025 | **Project Planning.** Finalized Charter and High-Level Plan. |
 | **Stage 3** | ✅ Complete | Dec 15 - Jan 9, 2026 | **Technical Documentation.** Finalized ERD, API Specs, Architecture Diagrams, and Equipment Loaning Logic. |
 | **Stage 4** | ✅ Complete | Jan 12 - Mar 6, 2026 | **MVP Development.** LOAN Module finalized (10 features, 7 files, 19 tests). Current stage completed. |
+| **Stage 5** | ✅ Complete | Mar 9 - 20, 2026 | **Project Closure.** QA validation, security/performance checks, final documentation, and **DEMODAY (March 20, 2026).** 
 
-### Current Progress: Stage 4 Completion
+### Current Progress: Stage 5 Closure Checkpoint
+
+**Checkpoint Date**: March 16, 2026  
+**Status**: 🔵 **Closure phase active; LOAN module stable and review-ready**
+
+Stage 5 closure highlights:
+- ✅ Closure documentation consolidated (Stage report + main report sync)
+- ✅ QA evidence centralized (19-test campaign documented)
+- ✅ Stage 4 late-cycle defects resolved (4/4)
+- ✅ Technical manual review preparation package available
+- 🔵 Final regression confirmation and demo sequence ongoing
+
+[View Full Stage 5 Report →](Stage_5/Report.md)
+
+### Stage 4 Completion Reference
 
 **Completion Date**: March 6, 2026  
 **Status**: ✅ **LOAN Module Production Ready**
@@ -98,11 +113,11 @@ Stage 4 achievements:
 
 ### System Architecture
 
-The application uses a **Modular Monolith** architecture with **DDD principles**. The Django backend acts as the central hub, utilizing an **Adapter/Entity** pattern to communicate with the ML engine while the frontend consumes REST-like endpoints via HTMX.
+The application uses a **Modular Monolith** architecture with **DDD principles**. The Django backend acts as the central hub, utilizing an **Adapter/Entity** pattern to communicate with the ML engine while the frontend consumes REST-like endpoints via HTML5.
 
 ```mermaid
 graph TD
-    A[Patient Web Browser] -->|HTMX Requests| B[Django Frontend Layer]
+    A[Patient Web Browser] -->|HTML5 Requests| B[Django Frontend Layer]
     B --> C[Domain Layer - DDD]
     C --> D[Infrastructure Layer]
     D --> E[PostgreSQL Database]
@@ -117,7 +132,7 @@ graph TD
 **Key Architectural Decisions**:
 1. **DDD Structure**: Clear separation between domain logic, application services, and infrastructure
 2. **Adapter Pattern**: ML model decoupled from web layer for independent testing/deployment
-3. **HTMX Over React**: Reduced bundle size (85KB vs 300KB+), faster page loads
+3. **HTML5 Over React**: Reduced bundle size (85KB vs 300KB+), faster page loads
 4. **Signal Handlers**: Automatic status transitions for equipment loans
 5. **PostgreSQL Relations**: Foreign keys enforce referential integrity for clinical data
 
@@ -410,7 +425,7 @@ CardioBot/
 - Signal handlers for automatic state transitions
 
 #### 3. **Frontend Design**
-- HTMX vs React: Performance trade-offs
+- HTML5 vs React: Performance trade-offs
 - BEM CSS methodology
 - Vanilla JS for lightweight interactions
 
@@ -427,7 +442,7 @@ CardioBot/
 #### 6. **Performance**
 - Database indexing on `loan_date`
 - CSS animations using GPU acceleration
-- HTMX for reduced page reloads
+- HTML5 for reduced page reloads
 
 #### 7. **Collaboration**
 - Agile sprint workflow
@@ -449,6 +464,14 @@ CardioBot/
 ✅ **Production Environment**: Docker Compose (6 containers, healthy)  
 ✅ **Bug Tracking**: 4 bugs identified and resolved  
 
+### Stage 5 Deliverables (Closure Workstream)
+
+✅ **Stage 5 Report**: [Stage_5/Report.md](Stage_5/Report.md)  
+✅ **QA Campaign Scope**: 19 tests documented in [GUIDE_TEST_PHASES_1_2_3.md](GUIDE_TEST_PHASES_1_2_3.md)  
+✅ **Bug Closure**: 4/4 late-cycle bugs resolved from Stage 4 stabilization 
+🔵 **Final Regression Confirmation**: In progress before Demo Day  
+🔵 **Merge and Release Decision**: Planned after final QA sign-off
+
 ---
 
 ## Conclusion
@@ -461,7 +484,7 @@ The **CardioBot** project has successfully progressed through Stage 4, deliverin
 - ✅ **User-Centric Design**: intuitive UI, visual urgency system
 - ✅ **Collaborative Success**: Daily stand-ups, peer reviews
 
-With the LOAN Module finalized, the project is positioned for successful QA testing and Demo Day presentation on **March 20, 2026**. The comprehensive documentation, robust testing strategy, and production-ready codebase demonstrate the team's readiness for Technical Manual Review.
+With the LOAN Module finalized and Stage 5 closure active, the project is positioned for final regression confirmation and Demo Day presentation on **March 20, 2026**. The consolidated documentation and evidence package now supports portfolio evaluation and Technical Manual Review.
 
 ---
 
@@ -469,6 +492,7 @@ With the LOAN Module finalized, the project is positioned for successful QA test
 - **[Stage 1 Report](Stage_1/Report.md)** - *Ideation & Team Formation*
 - **[Stage 2 Report](Stage_2/Report.md)** - *Project Planning*
 - **[Stage 3 Report](Stage_3/Report.md)** - *Technical Documentation*
-- **[Stage 4 Report](Stage_4/Report.md)** - *MVP Development* (Current)
+- **[Stage 4 Report](Stage_4/Report.md)** - *MVP Development*
+- **[Stage 5 Report](Stage_5/Report.md)** - *Project Closure and Review Readiness* (Current)
 - **[Test Guide](GUIDE_TEST_PHASES_1_2_3.md)** - *19 Comprehensive Tests*
 
